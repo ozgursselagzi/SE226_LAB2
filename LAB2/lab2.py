@@ -93,3 +93,18 @@ print(words_with_e)
 
 words_with_ha = [word for word in words if word.startswith('ha')]
 print(words_with_ha)
+
+print('-------------------------------------------------------------------------')
+
+number_from_user = int(input("Please enter a number between 3 and 9: "))
+
+if number_from_user < 3 or number_from_user > 9:
+    print("Invalid input. Please enter a number between 3 and 9.")
+    
+else:
+    for i in range(1, number_from_user + 1):
+        print("*" * i)
+
+        if i == number_from_user:
+            for j in range(number_from_user - 1, 0, -1):
+                print("*" * j)
